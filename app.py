@@ -8,12 +8,12 @@ def home():
     
     mensaje += "<h2> Para poder usarla tendras que hacer</h2>"
     mensaje += "<ol>"
-    mensaje += "<li><h2>Sumar http://127.0.0.1:5000//sumar/10/20</h2><li>"
-    mensaje += "<li><h2>Restar http://127.0.0.1:500/restar/10/20</h2><li>"
-    mensaje += "<li><h2>Multiplicar http://127.0.0.1:500/multiplicar/10/20</h2><li>"
-    mensaje += "<li><h2>Dividir http://127.0.0.1:500/dividir/10/20</h2><li>"
-    mensaje += "<li><h2>Maximo http://127.0.0.1:500/maximo/10/20</h2><li>"
-    mensaje += "<li><h2>Minimo http://127.0.0.1:500/minimo/10/20</h2><li>"
+    mensaje += "<li><h2>Sumar http://127.0.0.1:5000//sumar/10/20</h2></li>"
+    mensaje += "<li><h2>Restar http://127.0.0.1:5000/restar/10/20</h2></li>"
+    mensaje += "<li><h2>Multiplicar http://127.0.0.1:5000/multiplicar/10/20</h2></li>"
+    mensaje += "<li><h2>Dividir http://127.0.0.1:5000/dividir/10/20</h2></li>"
+    mensaje += "<li><h2>Maximo http://127.0.0.1:5000/maximo/10/20</h2></li>"
+    mensaje += "<li><h2>Minimo http://127.0.0.1:5000/minimo/10/20</h2></li>"
     mensaje += "</ol>"
     return mensaje
 
@@ -52,7 +52,7 @@ def maximo1(v1,v2):
     mensaje= f"<h1>El maximo entre {n1} y  {n2} es {mayor}</h1>"
     return mensaje
 
-@app.route("/Minimo/<v1>/<v2>")
+@app.route("/minimo/<v1>/<v2>")
 def minimo1(v1,v2):
     n1 = float(v1)
     n2 = float(v2)
